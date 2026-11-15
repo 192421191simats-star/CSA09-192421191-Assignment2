@@ -2,8 +2,8 @@
 
 | | |
 |---|---|
-| **Name** | `<YOUR NAME>` |
-| **Register Number** | `<REGISTER NUMBER>` |
+| **Name** | `Prabhenjan srikanth R` |
+| **Register Number** | `192421191` |
 | **Java version** | OpenJDK 21 (compiles on JDK 17+) |
 | **Report** | [`report/Assignment2_Report.pdf`](report/Assignment2_Report.pdf) (also `.docx` / `.md`) |
 
