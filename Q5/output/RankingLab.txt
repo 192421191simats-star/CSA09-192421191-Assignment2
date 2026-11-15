@@ -1,0 +1,48 @@
+$ cd Q5
+$ javac -d out RankingLab.java
+$ java -Xms1g -Xmx1g -cp out RankingLab input/teams_ties.csv input/expected_ties.txt input/teams_adversarial.csv input/expected_adversarial.txt
+=== Reuse: one design, several rankable types ===
+  Teams   : [Eagles(9,6), Falcons(9,6), Antelopes(9,4), Bisons(9,4), Panthers(9,4)]
+  Players : [Player[name=Bala, goals=9, assists=0], Player[name=Anu, goals=7, assists=5], Player[name=Arjun, goals=7, assists=5], Player[name=Vijay, goals=7, assists=3]]
+  Colleges: [College[name=PSG, gold=12, silver=11], College[name=SIMATS, gold=12, silver=9], College[name=CEG, gold=10, silver=20]]
+  Mixed Leaderboard<Rankable> (wildcards): [Eagles(9,6), Panthers(9,4), Player[name=Bala, goals=9, assists=0], Player[name=Anu, goals=7, assists=5], Cobras(6,1)]
+  averagePrimary(List<Team>) = 6.25, averagePrimary(List<College>) = 11.33
+
+=== DATA SET 1 - ties at every level (12 teams) ===
+  hand-worked ranking : [Eagles, Falcons, Antelopes, Bisons, Panthers, Hawks, Rhinos, Cobras, Tigers, Sharks, Wolves, Bears]
+  comparator                               matches  stable?*  antisym.   transitiv. self!=0     result / note
+  CORRECT Orders.standard()                YES      same      0          0          0           
+  F1 subtraction (b.points - a.points)     YES      same      0          0          0           
+  F2 ignores the name tie-break            no       DIFFERS   0          0          0           Eagles,Falcons,Panthers,Bisons,Antelopes,Rhinos,Hawks,Cobras,Tigers,Wolves,Sharks,Bears
+  F3 never returns 0 (a>=b ? -1 : 1)       no       DIFFERS   46         0          12          Antelopes,Falcons,Bisons,Eagles,Panthers,Hawks,Rhinos,Tigers,Cobras,Sharks,Wolves,Bears
+  F4 .reversed() on the whole chain        no       same      0          0          0           Falcons,Eagles,Panthers,Bisons,Antelopes,Rhinos,Hawks,Tigers,Cobras,Wolves,Sharks,Bears
+  * stable? = same ranking when the input order is reversed (a total order must not depend on input order)
+
+=== DATA SET 2 - adversarial (designed to break faulty comparators) (8 teams) ===
+  hand-worked ranking : [Overlords, Rockets, Ants, Zebras, Comets, Lions, Moles, Penalised]
+  comparator                               matches  stable?*  antisym.   transitiv. self!=0     result / note
+  CORRECT Orders.standard()                YES      same      0          0          0           
+  F1 subtraction (b.points - a.points)     no       DIFFERS   0          24         0           Comets,Rockets,Lions,Moles,Penalised,Overlords,Ants,Zebras
+  F2 ignores the name tie-break            no       DIFFERS   0          0          0           Overlords,Rockets,Zebras,Ants,Comets,Moles,Lions,Penalised
+  F3 never returns 0 (a>=b ? -1 : 1)       no       DIFFERS   22         0          8           Overlords,Rockets,Comets,Ants,Zebras,Lions,Moles,Penalised
+  F4 .reversed() on the whole chain        no       same      0          0          0           Overlords,Rockets,Zebras,Ants,Comets,Moles,Lions,Penalised
+  * stable? = same ranking when the input order is reversed (a total order must not depend on input order)
+
+=== F3 on larger random data (TimSort detects contract violations it happens to observe) ===
+  first exception: Comparison method violates its general contract!
+  IllegalArgumentException in 5 of 50 sorts of 2,000 teams with 4 distinct point values
+
+=== Cost of producing one ranking (ms, mean of 5 runs) ===
+  approach                                   n=10,000    n=100,000  n=1,000,000
+  Comparator chain, 1 sort                       6.01        79.83      1310.69
+  Comparable (natural order), 1 sort             3.61        61.22      1097.07
+  3 stable sorts (name, gd, points)             15.48       150.86      1733.53
+  (all three approaches were checked to give the identical ranking)
+
+=== Live leaderboard: 1 score update + top-10 query via ranking() (200 updates; 50 at 100k; 10 at 1M) ===
+  n             ms per update objects sorted / query
+  1,000                 0.262                  1,000
+  10,000                5.349                 10,000
+  100,000             104.639                100,000
+  1,000,000          1016.759              1,000,000
+Raw data: data/q5_sort.csv, data/q5_live.csv

@@ -1,0 +1,13 @@
+# name,points,goalDiff   - data set 1: several ties at every level
+Panthers,9,4
+Eagles,9,6
+Cobras,6,1
+Bisons,9,4
+Falcons,9,6
+Tigers,6,1
+Rhinos,6,3
+Wolves,3,-2
+Antelopes,9,4
+Sharks,3,-2
+Hawks,6,3
+Bears,0,-9

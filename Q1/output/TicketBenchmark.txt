@@ -1,0 +1,87 @@
+$ cd Q1
+$ javac -d out TicketBenchmark.java
+$ java -Xms512m -Xmx512m -cp out TicketBenchmark input/workloads.txt
+
+=== Workload W1-short : 1 ticket(s) x 12 fields, 30 repetitions (155 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +             0.035      0.020      0.026           0.00      2->2                  12
+StringBuilder        0.006      0.008      0.004           0.00      2->2                   1
+StringBuffer         0.014      0.038      0.005           0.00      2->2                   1
+String.join          0.017      0.035      0.008           0.00      2->2                   1
+StringJoiner         0.033      0.053      0.015           0.00      2->2                   1
+String.format        0.040      0.024      0.021           0.00      2->2                   2
+
+=== Workload W2-bulk : 10,000 ticket(s) x 50 fields, 10 repetitions (747 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +            35.119      7.909     29.859         195.62     27->149           500,000
+StringBuilder       14.428      0.713     13.537          32.50     27->46             10,000
+StringBuffer        14.465      0.418     13.923          32.58     27->47             10,000
+String.join          9.478      0.656      8.569          17.17     27->199            10,000
+StringJoiner        10.844      0.292     10.501          12.74     27->155            10,000
+String.format       31.604      0.810     30.490          74.62     27->161            20,000
+
+=== Workload W3-group-manifest : 20 ticket(s) x 4,000 fields, 10 repetitions (72,936 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +           442.928     26.265    413.838        2743.11      7->266            80,000
+StringBuilder        1.372      0.184      1.213           4.44      7->52                 20
+StringBuffer         1.781      0.127      1.620           4.44      7->52                 20
+String.join          1.389      0.034      1.343           3.09      7->38                 20
+StringJoiner         1.690      0.038      1.635           2.02      7->27                 20
+String.format        6.144      0.055      6.083          11.10      7->118                40
+
+=== Workload S-0100 : 200 ticket(s) x 100 fields, 10 repetitions (1,554 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +             2.688      0.058      2.602          15.39      3->157            20,000
+StringBuilder        0.395      0.025      0.369           1.28      3->16                200
+StringBuffer         0.467      0.038      0.429           1.28      3->16                200
+String.join          0.221      0.013      0.201           0.69      3->10                200
+StringJoiner         0.662      1.282      0.240           0.51      3->8                 200
+String.format        3.182      3.901      1.008           3.01      3->33                400
+
+=== Workload S-0200 : 200 ticket(s) x 200 fields, 10 repetitions (3,279 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +             9.115      0.782      8.598          62.25      4->16             40,000
+StringBuilder        0.683      0.028      0.646           2.57      4->30                200
+StringBuffer         0.775      0.034      0.729           2.57      4->30                200
+String.join          0.455      0.026      0.419           1.42      4->18                200
+StringJoiner         0.499      0.035      0.458           1.04      4->14                200
+String.format        2.196      0.060      2.094           6.12      4->65                400
+
+=== Workload S-0400 : 200 ticket(s) x 400 fields, 10 repetitions (6,750 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +            44.122      6.272     37.655         255.56      6->129            80,000
+StringBuilder        1.867      0.061      1.817           5.14      6->58                200
+StringBuffer         2.035      0.035      1.974           5.14      6->58                200
+String.join          1.259      0.113      0.959           2.90      6->36                200
+StringJoiner         1.513      0.265      1.068           2.09      6->28                200
+String.format        6.370      0.134      6.162          11.57      6->123               400
+
+=== Workload S-0800 : 200 ticket(s) x 800 fields, 10 repetitions (13,687 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +           184.830      3.234    181.320        1038.85     11->106           160,000
+StringBuilder        4.161      0.488      3.779          10.27     12->115               200
+StringBuffer         4.158      0.123      3.915          10.27     12->115               200
+String.join          2.732      0.096      2.610           5.85     12->71                200
+StringJoiner         3.460      0.095      3.315           4.20     12->54                200
+String.format       13.302      0.441     12.683          23.57     12->248               400
+
+=== Workload S-1600 : 200 ticket(s) x 1,600 fields, 10 repetitions (28,306 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +           691.090     23.483    647.480        4235.85     22->287           320,000
+StringBuilder        9.748      0.191      9.434          20.68     22->230               200
+StringBuffer         8.407      0.205      7.990          20.68     22->230               200
+String.join          5.286      0.218      5.076          12.04     22->143               200
+StringJoiner         5.349      0.283      5.000           8.55     22->108               200
+String.format       23.439      0.760     22.579          48.28     22->199               400
+
+=== Workload S-3200 : 200 ticket(s) x 3,200 fields, 10 repetitions (58,057 chars/ticket) ===
+approach           mean ms      stdev     min ms   alloc MB/run  heap MB b->a  intermediates
+String +          2814.602     87.758   2725.067       17429.25     42->184           640,000
+StringBuilder       22.163      0.558     21.681          41.59     42->156               200
+StringBuffer        22.387      1.299     19.768          41.59     42->156               200
+String.join         13.095      0.981     12.345          24.61     42->292               200
+StringJoiner        16.182      0.351     15.665          17.36     42->216               200
+String.format       48.063      3.756     43.706          99.12     42->123               400
+
+All six approaches produced identical ticket text for every workload.
+Raw data: data/q1_raw.csv   Summary: data/q1_summary.csv   (checksum 2250412800)

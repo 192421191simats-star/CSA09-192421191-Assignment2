@@ -1,0 +1,11 @@
+# name,points,goalDiff   - data set 2: designed to break faulty comparators
+# huge positive/negative values make b.points - a.points overflow int
+# Zebras/Ants and Moles/Lions are full ties on points and goal difference - only the name decides
+Zebras,12,5
+Ants,12,5
+Overlords,2000000000,10
+Penalised,-2000000000,0
+Moles,7,0
+Lions,7,0
+Comets,12,-1500000000
+Rockets,12,1500000000

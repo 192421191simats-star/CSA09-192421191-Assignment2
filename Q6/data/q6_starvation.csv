@@ -1,0 +1,21 @@
+design,severity,arrived,served,still_waiting,mean_wait_min,max_wait_min
+PriorityQueue (strict),1,457,455,2,2.5,10
+PriorityQueue (strict),2,953,950,3,4.8,30
+PriorityQueue (strict),3,1968,1905,63,47.2,196
+PriorityQueue (strict),4,196,111,85,188.0,712
+PriorityQueue (strict),5,191,69,122,139.5,718
+5 FIFO queues, no ageing,1,457,455,2,2.5,10
+5 FIFO queues, no ageing,2,953,950,3,4.8,30
+5 FIFO queues, no ageing,3,1968,1905,63,47.2,196
+5 FIFO queues, no ageing,4,196,111,85,188.0,712
+5 FIFO queues, no ageing,5,191,69,122,139.5,718
+5 FIFO queues + ageing 30 min/level, may climb to level 2,1,457,455,2,2.5,10
+5 FIFO queues + ageing 30 min/level, may climb to level 2,2,953,891,62,49.7,192
+5 FIFO queues + ageing 30 min/level, may climb to level 2,3,1968,1802,166,59.8,197
+5 FIFO queues + ageing 30 min/level, may climb to level 2,4,196,173,23,66.1,202
+5 FIFO queues + ageing 30 min/level, may climb to level 2,5,191,169,22,81.4,174
+5 FIFO queues + ageing 30 min/level, may climb to level 3,1,457,455,2,2.5,10
+5 FIFO queues + ageing 30 min/level, may climb to level 3,2,953,950,3,4.8,30
+5 FIFO queues + ageing 30 min/level, may climb to level 3,3,1968,1752,216,80.0,260
+5 FIFO queues + ageing 30 min/level, may climb to level 3,4,196,165,31,80.4,250
+5 FIFO queues + ageing 30 min/level, may climb to level 3,5,191,168,23,89.0,246

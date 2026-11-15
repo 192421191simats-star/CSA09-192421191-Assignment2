@@ -1,0 +1,4 @@
+$ cd Q3
+$ javac -d out Attendance.java
+$ java -cp out Attendance
+Unique students: 2

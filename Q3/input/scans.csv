@@ -1,0 +1,20 @@
+# test,gate,regNo,name
+# Test 1 - appears to work: each card object is reused by the gate reader's cache (same reference re-scanned)
+T1,G1,192311001,Arun
+T1,G2,192311002,Divya
+T1,G1,192311003,Karthik
+T1,G3,192311004,Meera
+T1,G2,REPEAT-OBJECT,192311001
+T1,G4,REPEAT-OBJECT,192311003
+# Test 2 - exposes duplicates: every scan creates a NEW Student object
+T2,G1,192311001,Arun
+T2,G2,192311002,Divya
+T2,G3,192311001,Arun
+T2,G1,192311003,Karthik
+T2,G4,192311001,Arun
+T2,G2,192311002,Divya
+# Test 3 - own test (TreeSet ordered by NAME, inconsistent with equals)
+T3,G1,192311001,Arun
+T3,G2,192311050,Arun
+T3,G3,192311002,Divya
+T3,G4,192311002,DIVYA

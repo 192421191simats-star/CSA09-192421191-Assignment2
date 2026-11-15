@@ -1,0 +1,4 @@
+$ cd Q6
+$ javac -d out Triage.java
+$ java -cp out Triage
+Meena(S1) Kumar(S1) Lata(S2) Ravi(S3) John(S3) Asha(S5)

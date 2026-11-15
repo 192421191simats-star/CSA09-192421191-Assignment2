@@ -1,0 +1,85 @@
+$ cd Q4
+$ javac -d out PharmacyInventory.java
+$ java -Xms1g -Xmx1g -cp out PharmacyInventory input/medicines_sample.csv
+=== Part 1: sample inventory (20 medicines) ===
+Lookup MED919166 -> Medicine[code=MED919166, name=Atorvastatin 10mg, stock=551]
+Lookup MED000000 -> null   (unknown code)
+
+Report 1 - code order (TreeMap, natural):
+    MED198695 Diclofenac Gel 851
+    MED293630 Losartan 50mg 463
+    MED295217 Ranitidine 150mg 15
+    MED299126 Ibuprofen 400mg 405
+    MED568286 ORS Sachet 541
+    MED573780 Cetirizine 10mg 710
+    MED574354 Paracetamol 500mg 310
+    MED588269 Omeprazole 20mg 829
+    MED598873 Ondansetron 4mg 630
+    MED632510 Azithromycin 500mg 649
+    MED636775 Salbutamol Inhaler 756
+    MED686963 Amoxicillin 250mg 145
+    MED715917 Pantoprazole 40mg 609
+    MED743782 Dolo 650 161
+    MED760479 Ceftriaxone 1g 665
+    MED919166 Atorvastatin 10mg 551
+    MED931496 Vitamin D3 60K 638
+    MED942950 Insulin Glargine 669
+    MED996580 Amlodipine 5mg 42
+    MED998485 Metformin 500mg 92
+
+Report 2 - order added (LinkedHashMap, natural):
+    MED574354 Paracetamol 500mg 310
+    MED686963 Amoxicillin 250mg 145
+    MED998485 Metformin 500mg 92
+    MED919166 Atorvastatin 10mg 551
+    MED588269 Omeprazole 20mg 829
+    MED573780 Cetirizine 10mg 710
+    MED632510 Azithromycin 500mg 649
+    MED996580 Amlodipine 5mg 42
+    MED715917 Pantoprazole 40mg 609
+    MED299126 Ibuprofen 400mg 405
+    MED293630 Losartan 50mg 463
+    MED942950 Insulin Glargine 669
+    MED636775 Salbutamol Inhaler 756
+    MED598873 Ondansetron 4mg 630
+    MED760479 Ceftriaxone 1g 665
+    MED743782 Dolo 650 161
+    MED931496 Vitamin D3 60K 638
+    MED295217 Ranitidine 150mg 15
+    MED198695 Diclofenac Gel 851
+    MED568286 ORS Sachet 541
+
+Order check for each map WITHOUT extra work (plain values() iteration):
+  map            matches code order?    matches arrival order?
+  HashMap        false                  false                 
+  TreeMap        true                   false                 
+  LinkedHashMap  false                  true                  
+
+=== Part 2: timings (mean of 5 runs after warm-up) ===
+map            n           put ns/op    100k get ms    ns/lookup       p99 ns  code rpt ms   arr rpt ms    code ok     arr ok
+HashMap        1,000           941.2          3.428         34.3          193        0.911        0.100       true       true
+TreeMap        1,000           300.7         17.763        177.6          336        0.198        0.330       true       true
+LinkedHashMap  1,000           134.5          3.364         33.6          141        1.018        0.154       true       true
+Hashtable      1,000           161.5          4.356         43.6          219        1.024        0.198       true       true
+SortedArray    1,000          1612.6         38.093        380.9            -        0.233          n/a       true        n/a   insert one new: 4,610 ns
+
+HashMap        10,000          276.6          4.538         45.4          359       14.291        1.706       true       true
+TreeMap        10,000          438.0         30.436        304.4          692        2.206        4.479       true       true
+LinkedHashMap  10,000          145.1          4.664         46.6          417       11.840        1.524       true       true
+Hashtable      10,000          191.1          5.256         52.6          457       14.003        2.536       true       true
+SortedArray    10,000          932.9         35.815        358.2            -        2.487          n/a       true        n/a   insert one new: 4,240 ns
+
+HashMap        100,000         332.5          9.657         96.6          933      109.888       25.039       true       true
+TreeMap        100,000         697.7         60.802        608.0         1312       22.958       71.454       true       true
+LinkedHashMap  100,000         231.2          8.770         87.7          900       82.916       12.528       true       true
+Hashtable      100,000         202.8         11.756        117.6         1069      106.784       26.465       true       true
+SortedArray    100,000        1201.0         50.379        503.8            -       16.849          n/a       true        n/a   insert one new: 11,168 ns
+
+HashMap        1,000,000       290.6         14.185        141.9         1077      994.048      274.883       true       true
+TreeMap        1,000,000      1801.9        176.527       1765.3         3924      378.889     1791.806       true       true
+LinkedHashMap  1,000,000       371.5         15.812        158.1         1230     1433.142       89.933       true       true
+Hashtable      1,000,000       276.1         17.144        171.4         1265     1102.891      413.271       true       true
+SortedArray    1,000,000      1155.6        117.839       1178.4            -      233.522          n/a       true        n/a   insert one new: 190,875 ns
+
+put ns/op for SortedArray = sort-based build cost per medicine (O(n log n) total)
+Raw data: data/q4_raw.csv   Summary: data/q4_summary.csv   (checksum 166)

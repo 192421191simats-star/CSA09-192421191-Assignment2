@@ -1,0 +1,66 @@
+$ cd Q6
+$ javac -d out TriageLab.java
+$ java -Xms1g -Xmx1g -cp out TriageLab input/patients_8.csv input/expected_8.txt
+=== 1. Hand-verified instance (8 patients) ===
+  08:00 admit Ravi    severity 3   arrival seq 0
+  08:03 admit Meena   severity 1   arrival seq 1
+  08:05 admit John    severity 3   arrival seq 2
+  08:06 admit Asha    severity 5   arrival seq 3
+  08:10 admit Kumar   severity 1   arrival seq 4
+  08:12 admit Lata    severity 2   arrival seq 5
+  08:15 admit Sanjay  severity 1   arrival seq 6
+  08:20 admit Priya   severity 3   arrival seq 7
+  Printing the PriorityQueue directly : [Meena(S1), Kumar(S1), Sanjay(S1), Priya(S3), Ravi(S3), John(S3), Lata(S2), Asha(S5)]
+  Waiting list (sorted copy)          : [Meena(S1), Kumar(S1), Sanjay(S1), Lata(S2), Ravi(S3), John(S3), Priya(S3), Asha(S5)]
+  Plain FIFO queue (ArrayDeque) order : [Ravi(S3), Meena(S1), John(S3), Asha(S5), Kumar(S1), Lata(S2), Sanjay(S1), Priya(S3)]   <- ignores severity
+  Program treatment order : [Meena, Kumar, Sanjay, Lata, Ravi, John, Priya, Asha]
+  Hand-worked order       : [Meena, Kumar, Sanjay, Lata, Ravi, John, Priya, Asha]
+  MATCH: true
+
+=== 2. Growth: ns per admit / per next-patient at queue size n (mean of 5 runs) ===
+  design / operation                n=1,000     n=10,000    n=100,000  n=1,000,000
+  PriorityQueue admit                  36.6         42.4         46.7         46.6
+  PriorityQueue next                  210.1        237.1        351.6        818.7
+  Sorted LinkedList admit           14165.2      27404.5     240198.0     skipped*
+  Sorted LinkedList next                9.5          6.6          6.7     skipped*
+  5 FIFO queues admit                  17.0         16.5         27.4         32.4
+  5 FIFO queues next                   11.9         13.8         34.7         43.6
+  (each measurement: queue pre-filled to n, then 10,000 admits and 10,000 next() at that size;
+   sorted LinkedList at n=100,000: 1,000 of each)
+  * sorted LinkedList at 1,000,000: each admit walks ~10^5-10^6 nodes; not run
+
+=== 3. Starvation simulation: 30 independent 12-hour shifts, 1 doctor, 6 min per patient ===
+  arrivals/hour: S1 1.5, S2 3, S3 6 (11.5/h incl. S4,S5 vs capacity 10/h) for 6 h, then S1-S3 x0.75; S4 0.5, S5 0.5
+  PriorityQueue (strict)
+    severity   arrived   served  still waiting  mean wait min   max wait min
+    S1             457      455              2            2.5             10
+    S2             953      950              3            4.8             30
+    S3            1968     1905             63           47.2            196
+    S4             196      111             85          188.0            712
+    S5             191       69            122          139.5            718
+  5 FIFO queues, no ageing
+    severity   arrived   served  still waiting  mean wait min   max wait min
+    S1             457      455              2            2.5             10
+    S2             953      950              3            4.8             30
+    S3            1968     1905             63           47.2            196
+    S4             196      111             85          188.0            712
+    S5             191       69            122          139.5            718
+  5 FIFO queues + ageing 30 min/level, may climb to level 2
+    severity   arrived   served  still waiting  mean wait min   max wait min
+    S1             457      455              2            2.5             10
+    S2             953      891             62           49.7            192
+    S3            1968     1802            166           59.8            197
+    S4             196      173             23           66.1            202
+    S5             191      169             22           81.4            174
+  5 FIFO queues + ageing 30 min/level, may climb to level 3
+    severity   arrived   served  still waiting  mean wait min   max wait min
+    S1             457      455              2            2.5             10
+    S2             953      950              3            4.8             30
+    S3            1968     1752            216           80.0            260
+    S4             196      165             31           80.4            250
+    S5             191      168             23           89.0            246
+  totals over all shifts; max wait includes patients still waiting at shift end (wait so far)
+
+=== 4. City hospital: 5,000 patients/day through one PriorityQueue ===
+  5,000 admits + 3,334 treatments: 8.38 ms total (1.68 us per patient); peak queue 1,667
+  Rebuild waiting-list display of 1,666 patients: 0.303 ms

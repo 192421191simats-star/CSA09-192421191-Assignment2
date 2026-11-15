@@ -1,0 +1,46 @@
+structure,unique_students,scans,run,ns_per_scan
+"HashSet<Student>",10000,20000,1,157.51
+"HashSet<Student>",10000,20000,2,181.96
+"HashSet<Student>",10000,20000,3,155.71
+"HashSet<Student>",10000,20000,4,136.56
+"HashSet<Student>",10000,20000,5,94.47
+"HashSet<Student>",100000,200000,1,144.55
+"HashSet<Student>",100000,200000,2,146.51
+"HashSet<Student>",100000,200000,3,108.46
+"HashSet<Student>",100000,200000,4,110.48
+"HashSet<Student>",100000,200000,5,394.26
+"HashSet<Student>",1000000,2000000,1,211.05
+"HashSet<Student>",1000000,2000000,2,225.45
+"HashSet<Student>",1000000,2000000,3,172.96
+"HashSet<Student>",1000000,2000000,4,261.45
+"HashSet<Student>",1000000,2000000,5,185.77
+"TreeSet<Student>(by regNo)",10000,20000,1,465.53
+"TreeSet<Student>(by regNo)",10000,20000,2,339.75
+"TreeSet<Student>(by regNo)",10000,20000,3,386.68
+"TreeSet<Student>(by regNo)",10000,20000,4,345.93
+"TreeSet<Student>(by regNo)",10000,20000,5,335.02
+"TreeSet<Student>(by regNo)",100000,200000,1,855.04
+"TreeSet<Student>(by regNo)",100000,200000,2,831.58
+"TreeSet<Student>(by regNo)",100000,200000,3,888.60
+"TreeSet<Student>(by regNo)",100000,200000,4,968.72
+"TreeSet<Student>(by regNo)",100000,200000,5,830.20
+"TreeSet<Student>(by regNo)",1000000,2000000,1,1994.65
+"TreeSet<Student>(by regNo)",1000000,2000000,2,2198.88
+"TreeSet<Student>(by regNo)",1000000,2000000,3,2004.27
+"TreeSet<Student>(by regNo)",1000000,2000000,4,2100.52
+"TreeSet<Student>(by regNo)",1000000,2000000,5,1976.19
+"HashMap<String,Student>",10000,20000,1,70.80
+"HashMap<String,Student>",10000,20000,2,259.13
+"HashMap<String,Student>",10000,20000,3,120.70
+"HashMap<String,Student>",10000,20000,4,117.05
+"HashMap<String,Student>",10000,20000,5,114.28
+"HashMap<String,Student>",100000,200000,1,166.94
+"HashMap<String,Student>",100000,200000,2,161.80
+"HashMap<String,Student>",100000,200000,3,155.20
+"HashMap<String,Student>",100000,200000,4,169.54
+"HashMap<String,Student>",100000,200000,5,189.90
+"HashMap<String,Student>",1000000,2000000,1,262.17
+"HashMap<String,Student>",1000000,2000000,2,221.72
+"HashMap<String,Student>",1000000,2000000,3,289.05
+"HashMap<String,Student>",1000000,2000000,4,178.87
+"HashMap<String,Student>",1000000,2000000,5,226.37

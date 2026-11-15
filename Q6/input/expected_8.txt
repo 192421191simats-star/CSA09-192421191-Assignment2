@@ -1,0 +1,2 @@
+# treatment order worked out BY HAND (severity first, then arrival time)
+Meena,Kumar,Sanjay,Lata,Ravi,John,Priya,Asha

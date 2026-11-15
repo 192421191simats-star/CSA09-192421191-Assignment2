@@ -1,0 +1,68 @@
+$ cd Q3
+$ javac -d out ContractLab.java
+$ java -Xms1g -Xmx1g -cp out ContractLab input/scans.csv
+=== TEST 1: HashSet<BrokenStudent>, re-scans reuse the SAME object ===
+  G1 scan 192311001 Arun         identityHash=746292446  bucket=5  added=true
+  G2 scan 192311002 Divya        identityHash=303563356  bucket=4  added=true
+  G1 scan 192311003 Karthik      identityHash=135721597  bucket=11 added=true
+  G3 scan 192311004 Meera        identityHash=142257191  bucket=13 added=true
+  G2 scan 192311001 Arun         identityHash=746292446  bucket=5  added=false
+  G4 scan 192311003 Karthik      identityHash=135721597  bucket=11 added=false
+  4 distinct students, 6 scans                 predicted 4   observed 4   [prediction confirmed]
+      reason: same reference -> same identity hashCode -> same bucket -> equals() true -> rejected
+
+=== TEST 2: HashSet<BrokenStudent>, every scan is a NEW object ===
+  G1 scan 192311001 Arun         identityHash=1826771953 bucket=3  added=true
+  G2 scan 192311002 Divya        identityHash=1406718218 bucket=2  added=true
+  G3 scan 192311001 Arun         identityHash=245257410  bucket=12 added=true
+  G1 scan 192311003 Karthik      identityHash=1705736037 bucket=14 added=true
+  G4 scan 192311001 Arun         identityHash=455659002  bucket=2  added=true
+  G2 scan 192311002 Divya        identityHash=250421012  bucket=9  added=true
+  3 distinct students, 6 scans                 predicted 6   observed 6   [prediction confirmed]
+      reason: Object.hashCode() differs per object -> different buckets -> equals() is never even called
+  contains(new BrokenStudent(192311001)) = false   although equals() would say true for 3 elements
+  a.equals(b) = true but a.hashCode()==b.hashCode() = false  -> CONTRACT BROKEN
+
+    same scans with the CORRECTED Student:
+  G1 scan 192311001 Arun         hashCode=822376264   bucket=12 added=true
+  G2 scan 192311002 Divya        hashCode=822376265   bucket=13 added=true
+  G3 scan 192311001 Arun         hashCode=822376264   bucket=12 added=false
+  G1 scan 192311003 Karthik      hashCode=822376266   bucket=14 added=true
+  G4 scan 192311001 Arun         hashCode=822376264   bucket=12 added=false
+  G2 scan 192311002 Divya        hashCode=822376265   bucket=13 added=false
+  corrected class, 6 scans                     predicted 3   observed 3   [prediction confirmed]
+      reason: equal regNo -> equal hashCode -> same bucket -> equals() finds it
+
+=== TEST 3a (own): regNo corrected AFTER the student was added ===
+  added 192311O01 Arun in bucket 3
+  regNo changed to 192311001 -> its hash now points to bucket 12, but the entry is still stored in the old bucket
+  contains(same object)               = false
+  contains(new 192311001)             = false
+  remove(same object)                 = false
+  1 student, corrected regNo, re-scanned       predicted 2   observed 2   [prediction confirmed]
+      reason: stale entry is unreachable through hashing, so the re-scan is stored as a second copy
+  set now: [192311001 Arun, 192311001 Arun]
+
+=== TEST 3b (own): TreeSet<Student> ordered by NAME (compareTo inconsistent with equals) ===
+  G1 scan 192311001 Arun       byName.add=true  byReg.add=true
+  G2 scan 192311050 Arun       byName.add=false byReg.add=true
+  G3 scan 192311002 Divya      byName.add=true  byReg.add=true
+  G4 scan 192311002 DIVYA      byName.add=true  byReg.add=false
+  TreeSet by name (2 Aruns, Divya twice)       predicted 3   observed 3   [prediction confirmed]
+      reason: TreeSet uses ONLY compare(); two different students named Arun compare 0 -> one is lost; 'Divya' vs 'DIVYA' differ -> counted twice
+  TreeSet by name, case-insensitive            predicted 2   observed 2   [prediction confirmed]
+      reason: now both Divyas merge, but the second Arun is still lost
+  TreeSet by regNo (consistent with equals)    predicted 3   observed 3   [prediction confirmed]
+      reason: compare()==0 exactly when equals() is true
+
+=== Verification of the corrected Student (randomised property test) ===
+  50,000 scans of 2,000 possible students: set size 2,000, distinct regNos 2,000, contract violations 0 -> PASS
+
+=== Alternative concept: time per scan and memory for n unique students ===
+structure                                n=10,000      n=100,000    n=1,000,000   bytes/student*
+HashSet<Student>                         145.2 ns       180.9 ns       211.3 ns          37.3
+TreeSet<Student>(by regNo)               374.6 ns       874.8 ns      2054.9 ns          35.9
+HashMap<String,Student>                  136.4 ns       168.7 ns       235.6 ns          38.3
+  (each stream has 2n scans: every student scanned twice in random order)
+  * container overhead only, measured as heap delta after GC for 500,000 students
+Raw data: data/q3_dedup.csv

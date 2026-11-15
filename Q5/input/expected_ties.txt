@@ -1,0 +1,2 @@
+# ranking worked out BY HAND for teams_ties.csv
+Eagles,Falcons,Antelopes,Bisons,Panthers,Hawks,Rhinos,Cobras,Tigers,Sharks,Wolves,Bears

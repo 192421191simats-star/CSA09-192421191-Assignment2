@@ -1,0 +1,568 @@
+operation,structure,size,run,ns_per_op
+add at end,ArrayList,1000,1,5.86
+add at end,ArrayList,1000,2,7.60
+add at end,ArrayList,1000,3,5.95
+add at end,ArrayList,1000,4,6.35
+add at end,ArrayList,1000,5,6.07
+add at end,ArrayList,1000,6,5.99
+add at end,ArrayList,1000,7,5.83
+add at end,ArrayList,10000,1,4.84
+add at end,ArrayList,10000,2,5.70
+add at end,ArrayList,10000,3,5.94
+add at end,ArrayList,10000,4,10.26
+add at end,ArrayList,10000,5,5.65
+add at end,ArrayList,10000,6,5.44
+add at end,ArrayList,10000,7,5.73
+add at end,ArrayList,100000,1,4.24
+add at end,ArrayList,100000,2,4.42
+add at end,ArrayList,100000,3,4.40
+add at end,ArrayList,100000,4,4.47
+add at end,ArrayList,100000,5,6.39
+add at end,ArrayList,100000,6,5.06
+add at end,ArrayList,100000,7,4.73
+add at end,LinkedList,1000,1,5.22
+add at end,LinkedList,1000,2,6.08
+add at end,LinkedList,1000,3,4.80
+add at end,LinkedList,1000,4,5.47
+add at end,LinkedList,1000,5,5.26
+add at end,LinkedList,1000,6,4.95
+add at end,LinkedList,1000,7,6.10
+add at end,LinkedList,10000,1,7.82
+add at end,LinkedList,10000,2,7.18
+add at end,LinkedList,10000,3,7.04
+add at end,LinkedList,10000,4,7.78
+add at end,LinkedList,10000,5,7.29
+add at end,LinkedList,10000,6,7.62
+add at end,LinkedList,10000,7,8.12
+add at end,LinkedList,100000,1,14.18
+add at end,LinkedList,100000,2,14.25
+add at end,LinkedList,100000,3,13.70
+add at end,LinkedList,100000,4,12.37
+add at end,LinkedList,100000,5,13.76
+add at end,LinkedList,100000,6,13.28
+add at end,LinkedList,100000,7,13.33
+add at end,Song[] manual,1000,1,5.83
+add at end,Song[] manual,1000,2,6.26
+add at end,Song[] manual,1000,3,9.22
+add at end,Song[] manual,1000,4,7.67
+add at end,Song[] manual,1000,5,6.41
+add at end,Song[] manual,1000,6,8.89
+add at end,Song[] manual,1000,7,6.11
+add at end,Song[] manual,10000,1,11.19
+add at end,Song[] manual,10000,2,117.09
+add at end,Song[] manual,10000,3,87.31
+add at end,Song[] manual,10000,4,28.06
+add at end,Song[] manual,10000,5,28.13
+add at end,Song[] manual,10000,6,21.45
+add at end,Song[] manual,10000,7,11.72
+add at end,Song[] manual,100000,1,10.29
+add at end,Song[] manual,100000,2,13.37
+add at end,Song[] manual,100000,3,10.36
+add at end,Song[] manual,100000,4,10.34
+add at end,Song[] manual,100000,5,11.09
+add at end,Song[] manual,100000,6,10.75
+add at end,Song[] manual,100000,7,9.90
+add at end,ArrayDeque,1000,1,11.67
+add at end,ArrayDeque,1000,2,10.24
+add at end,ArrayDeque,1000,3,9.87
+add at end,ArrayDeque,1000,4,9.67
+add at end,ArrayDeque,1000,5,9.28
+add at end,ArrayDeque,1000,6,9.82
+add at end,ArrayDeque,1000,7,9.94
+add at end,ArrayDeque,10000,1,9.43
+add at end,ArrayDeque,10000,2,9.80
+add at end,ArrayDeque,10000,3,9.57
+add at end,ArrayDeque,10000,4,13.47
+add at end,ArrayDeque,10000,5,13.56
+add at end,ArrayDeque,10000,6,13.01
+add at end,ArrayDeque,10000,7,12.58
+add at end,ArrayDeque,100000,1,12.63
+add at end,ArrayDeque,100000,2,10.14
+add at end,ArrayDeque,100000,3,11.32
+add at end,ArrayDeque,100000,4,13.11
+add at end,ArrayDeque,100000,5,13.57
+add at end,ArrayDeque,100000,6,11.89
+add at end,ArrayDeque,100000,7,12.49
+insert at front,ArrayList,1000,1,146.24
+insert at front,ArrayList,1000,2,140.71
+insert at front,ArrayList,1000,3,71.73
+insert at front,ArrayList,1000,4,94.18
+insert at front,ArrayList,1000,5,85.88
+insert at front,ArrayList,1000,6,73.18
+insert at front,ArrayList,1000,7,94.85
+insert at front,ArrayList,10000,1,358.71
+insert at front,ArrayList,10000,2,301.44
+insert at front,ArrayList,10000,3,333.97
+insert at front,ArrayList,10000,4,327.15
+insert at front,ArrayList,10000,5,347.36
+insert at front,ArrayList,10000,6,466.47
+insert at front,ArrayList,10000,7,330.27
+insert at front,ArrayList,100000,1,8667.63
+insert at front,ArrayList,100000,2,8644.84
+insert at front,ArrayList,100000,3,8579.44
+insert at front,ArrayList,100000,4,8550.00
+insert at front,ArrayList,100000,5,8577.23
+insert at front,ArrayList,100000,6,8854.82
+insert at front,ArrayList,100000,7,9670.68
+insert at front,LinkedList,1000,1,39.14
+insert at front,LinkedList,1000,2,27.76
+insert at front,LinkedList,1000,3,28.02
+insert at front,LinkedList,1000,4,28.57
+insert at front,LinkedList,1000,5,27.22
+insert at front,LinkedList,1000,6,32.95
+insert at front,LinkedList,1000,7,26.92
+insert at front,LinkedList,10000,1,27.34
+insert at front,LinkedList,10000,2,31.55
+insert at front,LinkedList,10000,3,29.04
+insert at front,LinkedList,10000,4,131.73
+insert at front,LinkedList,10000,5,24.94
+insert at front,LinkedList,10000,6,28.67
+insert at front,LinkedList,10000,7,27.74
+insert at front,LinkedList,100000,1,24.80
+insert at front,LinkedList,100000,2,28.45
+insert at front,LinkedList,100000,3,26.15
+insert at front,LinkedList,100000,4,28.44
+insert at front,LinkedList,100000,5,25.95
+insert at front,LinkedList,100000,6,42.18
+insert at front,LinkedList,100000,7,27.40
+insert at front,Song[] manual,1000,1,81.56
+insert at front,Song[] manual,1000,2,84.21
+insert at front,Song[] manual,1000,3,87.46
+insert at front,Song[] manual,1000,4,87.48
+insert at front,Song[] manual,1000,5,84.79
+insert at front,Song[] manual,1000,6,90.52
+insert at front,Song[] manual,1000,7,86.52
+insert at front,Song[] manual,10000,1,464.58
+insert at front,Song[] manual,10000,2,484.25
+insert at front,Song[] manual,10000,3,434.12
+insert at front,Song[] manual,10000,4,507.72
+insert at front,Song[] manual,10000,5,486.20
+insert at front,Song[] manual,10000,6,502.43
+insert at front,Song[] manual,10000,7,516.28
+insert at front,Song[] manual,100000,1,9437.59
+insert at front,Song[] manual,100000,2,9285.16
+insert at front,Song[] manual,100000,3,9243.53
+insert at front,Song[] manual,100000,4,12817.65
+insert at front,Song[] manual,100000,5,9646.33
+insert at front,Song[] manual,100000,6,9638.61
+insert at front,Song[] manual,100000,7,9349.40
+insert at front,ArrayDeque,1000,1,97.66
+insert at front,ArrayDeque,1000,2,79.97
+insert at front,ArrayDeque,1000,3,107.11
+insert at front,ArrayDeque,1000,4,82.89
+insert at front,ArrayDeque,1000,5,79.02
+insert at front,ArrayDeque,1000,6,79.54
+insert at front,ArrayDeque,1000,7,25.43
+insert at front,ArrayDeque,10000,1,9.09
+insert at front,ArrayDeque,10000,2,13.40
+insert at front,ArrayDeque,10000,3,8.49
+insert at front,ArrayDeque,10000,4,10.47
+insert at front,ArrayDeque,10000,5,9.07
+insert at front,ArrayDeque,10000,6,14.22
+insert at front,ArrayDeque,10000,7,9.09
+insert at front,ArrayDeque,100000,1,5.50
+insert at front,ArrayDeque,100000,2,5.68
+insert at front,ArrayDeque,100000,3,5.71
+insert at front,ArrayDeque,100000,4,5.52
+insert at front,ArrayDeque,100000,5,5.39
+insert at front,ArrayDeque,100000,6,5.56
+insert at front,ArrayDeque,100000,7,5.46
+remove at front,ArrayList,1000,1,98.21
+remove at front,ArrayList,1000,2,112.71
+remove at front,ArrayList,1000,3,91.65
+remove at front,ArrayList,1000,4,100.15
+remove at front,ArrayList,1000,5,92.58
+remove at front,ArrayList,1000,6,97.71
+remove at front,ArrayList,1000,7,97.15
+remove at front,ArrayList,10000,1,348.97
+remove at front,ArrayList,10000,2,355.93
+remove at front,ArrayList,10000,3,390.14
+remove at front,ArrayList,10000,4,352.24
+remove at front,ArrayList,10000,5,371.11
+remove at front,ArrayList,10000,6,348.65
+remove at front,ArrayList,10000,7,379.13
+remove at front,ArrayList,100000,1,8834.26
+remove at front,ArrayList,100000,2,8742.05
+remove at front,ArrayList,100000,3,8732.25
+remove at front,ArrayList,100000,4,8725.87
+remove at front,ArrayList,100000,5,8784.17
+remove at front,ArrayList,100000,6,8957.18
+remove at front,ArrayList,100000,7,8995.59
+remove at front,LinkedList,1000,1,197.31
+remove at front,LinkedList,1000,2,83.16
+remove at front,LinkedList,1000,3,73.53
+remove at front,LinkedList,1000,4,17.14
+remove at front,LinkedList,1000,5,17.66
+remove at front,LinkedList,1000,6,16.70
+remove at front,LinkedList,1000,7,16.52
+remove at front,LinkedList,10000,1,15.04
+remove at front,LinkedList,10000,2,16.04
+remove at front,LinkedList,10000,3,16.46
+remove at front,LinkedList,10000,4,16.10
+remove at front,LinkedList,10000,5,16.05
+remove at front,LinkedList,10000,6,16.04
+remove at front,LinkedList,10000,7,16.10
+remove at front,LinkedList,100000,1,14.48
+remove at front,LinkedList,100000,2,11.45
+remove at front,LinkedList,100000,3,10.74
+remove at front,LinkedList,100000,4,13.12
+remove at front,LinkedList,100000,5,15.26
+remove at front,LinkedList,100000,6,9.98
+remove at front,LinkedList,100000,7,15.96
+remove at front,Song[] manual,1000,1,30.20
+remove at front,Song[] manual,1000,2,32.20
+remove at front,Song[] manual,1000,3,35.57
+remove at front,Song[] manual,1000,4,73.83
+remove at front,Song[] manual,1000,5,29.87
+remove at front,Song[] manual,1000,6,30.01
+remove at front,Song[] manual,1000,7,37.86
+remove at front,Song[] manual,10000,1,267.17
+remove at front,Song[] manual,10000,2,279.42
+remove at front,Song[] manual,10000,3,276.22
+remove at front,Song[] manual,10000,4,275.35
+remove at front,Song[] manual,10000,5,316.44
+remove at front,Song[] manual,10000,6,529.34
+remove at front,Song[] manual,10000,7,302.11
+remove at front,Song[] manual,100000,1,8981.29
+remove at front,Song[] manual,100000,2,9251.72
+remove at front,Song[] manual,100000,3,9329.97
+remove at front,Song[] manual,100000,4,9209.18
+remove at front,Song[] manual,100000,5,9344.07
+remove at front,Song[] manual,100000,6,9007.01
+remove at front,Song[] manual,100000,7,9635.52
+remove at front,ArrayDeque,1000,1,2.87
+remove at front,ArrayDeque,1000,2,3.00
+remove at front,ArrayDeque,1000,3,2.88
+remove at front,ArrayDeque,1000,4,2.89
+remove at front,ArrayDeque,1000,5,2.89
+remove at front,ArrayDeque,1000,6,4.03
+remove at front,ArrayDeque,1000,7,3.77
+remove at front,ArrayDeque,10000,1,4.35
+remove at front,ArrayDeque,10000,2,4.15
+remove at front,ArrayDeque,10000,3,3.04
+remove at front,ArrayDeque,10000,4,53.83
+remove at front,ArrayDeque,10000,5,3.09
+remove at front,ArrayDeque,10000,6,2.94
+remove at front,ArrayDeque,10000,7,2.99
+remove at front,ArrayDeque,100000,1,3.44
+remove at front,ArrayDeque,100000,2,3.34
+remove at front,ArrayDeque,100000,3,3.35
+remove at front,ArrayDeque,100000,4,3.68
+remove at front,ArrayDeque,100000,5,3.35
+remove at front,ArrayDeque,100000,6,3.43
+remove at front,ArrayDeque,100000,7,3.32
+insert in middle,ArrayList,1000,1,48.53
+insert in middle,ArrayList,1000,2,50.92
+insert in middle,ArrayList,1000,3,49.27
+insert in middle,ArrayList,1000,4,49.77
+insert in middle,ArrayList,1000,5,54.20
+insert in middle,ArrayList,1000,6,53.53
+insert in middle,ArrayList,1000,7,114.76
+insert in middle,ArrayList,10000,1,176.06
+insert in middle,ArrayList,10000,2,162.84
+insert in middle,ArrayList,10000,3,163.80
+insert in middle,ArrayList,10000,4,178.73
+insert in middle,ArrayList,10000,5,195.17
+insert in middle,ArrayList,10000,6,204.25
+insert in middle,ArrayList,10000,7,185.68
+insert in middle,ArrayList,100000,1,4829.24
+insert in middle,ArrayList,100000,2,4842.32
+insert in middle,ArrayList,100000,3,4491.90
+insert in middle,ArrayList,100000,4,4441.58
+insert in middle,ArrayList,100000,5,4511.28
+insert in middle,ArrayList,100000,6,4486.88
+insert in middle,ArrayList,100000,7,4437.95
+insert in middle,LinkedList,1000,1,1251.42
+insert in middle,LinkedList,1000,2,1269.18
+insert in middle,LinkedList,1000,3,1446.84
+insert in middle,LinkedList,1000,4,1265.20
+insert in middle,LinkedList,1000,5,1267.52
+insert in middle,LinkedList,1000,6,1289.93
+insert in middle,LinkedList,1000,7,1257.60
+insert in middle,LinkedList,10000,1,9379.03
+insert in middle,LinkedList,10000,2,9500.67
+insert in middle,LinkedList,10000,3,9500.04
+insert in middle,LinkedList,10000,4,9558.50
+insert in middle,LinkedList,10000,5,9356.50
+insert in middle,LinkedList,10000,6,9421.82
+insert in middle,LinkedList,10000,7,9632.41
+insert in middle,LinkedList,100000,1,87586.13
+insert in middle,LinkedList,100000,2,88959.69
+insert in middle,LinkedList,100000,3,89685.24
+insert in middle,LinkedList,100000,4,92243.31
+insert in middle,LinkedList,100000,5,89178.90
+insert in middle,LinkedList,100000,6,91837.35
+insert in middle,LinkedList,100000,7,95867.46
+insert in middle,Song[] manual,1000,1,44.98
+insert in middle,Song[] manual,1000,2,48.45
+insert in middle,Song[] manual,1000,3,44.05
+insert in middle,Song[] manual,1000,4,41.61
+insert in middle,Song[] manual,1000,5,41.77
+insert in middle,Song[] manual,1000,6,41.51
+insert in middle,Song[] manual,1000,7,41.96
+insert in middle,Song[] manual,10000,1,157.52
+insert in middle,Song[] manual,10000,2,152.79
+insert in middle,Song[] manual,10000,3,236.49
+insert in middle,Song[] manual,10000,4,204.64
+insert in middle,Song[] manual,10000,5,203.12
+insert in middle,Song[] manual,10000,6,228.01
+insert in middle,Song[] manual,10000,7,202.17
+insert in middle,Song[] manual,100000,1,4643.36
+insert in middle,Song[] manual,100000,2,4706.00
+insert in middle,Song[] manual,100000,3,4719.69
+insert in middle,Song[] manual,100000,4,4685.28
+insert in middle,Song[] manual,100000,5,5377.06
+insert in middle,Song[] manual,100000,6,4867.13
+insert in middle,Song[] manual,100000,7,4995.97
+remove in middle,ArrayList,1000,1,114.58
+remove in middle,ArrayList,1000,2,130.42
+remove in middle,ArrayList,1000,3,158.75
+remove in middle,ArrayList,1000,4,130.30
+remove in middle,ArrayList,1000,5,173.13
+remove in middle,ArrayList,1000,6,152.53
+remove in middle,ArrayList,1000,7,149.86
+remove in middle,ArrayList,10000,1,149.63
+remove in middle,ArrayList,10000,2,152.01
+remove in middle,ArrayList,10000,3,150.80
+remove in middle,ArrayList,10000,4,161.18
+remove in middle,ArrayList,10000,5,148.21
+remove in middle,ArrayList,10000,6,149.46
+remove in middle,ArrayList,10000,7,174.15
+remove in middle,ArrayList,100000,1,4508.51
+remove in middle,ArrayList,100000,2,4534.48
+remove in middle,ArrayList,100000,3,4534.11
+remove in middle,ArrayList,100000,4,4487.36
+remove in middle,ArrayList,100000,5,4399.52
+remove in middle,ArrayList,100000,6,4403.08
+remove in middle,ArrayList,100000,7,7551.54
+remove in middle,LinkedList,1000,1,472.87
+remove in middle,LinkedList,1000,2,450.38
+remove in middle,LinkedList,1000,3,456.18
+remove in middle,LinkedList,1000,4,470.02
+remove in middle,LinkedList,1000,5,456.70
+remove in middle,LinkedList,1000,6,470.81
+remove in middle,LinkedList,1000,7,454.99
+remove in middle,LinkedList,10000,1,8237.28
+remove in middle,LinkedList,10000,2,12677.76
+remove in middle,LinkedList,10000,3,8457.73
+remove in middle,LinkedList,10000,4,8507.36
+remove in middle,LinkedList,10000,5,8387.94
+remove in middle,LinkedList,10000,6,8420.81
+remove in middle,LinkedList,10000,7,8562.73
+remove in middle,LinkedList,100000,1,90884.82
+remove in middle,LinkedList,100000,2,108809.17
+remove in middle,LinkedList,100000,3,87960.41
+remove in middle,LinkedList,100000,4,87021.90
+remove in middle,LinkedList,100000,5,93395.22
+remove in middle,LinkedList,100000,6,91679.98
+remove in middle,LinkedList,100000,7,94024.26
+remove in middle,Song[] manual,1000,1,119.92
+remove in middle,Song[] manual,1000,2,119.55
+remove in middle,Song[] manual,1000,3,126.91
+remove in middle,Song[] manual,1000,4,160.89
+remove in middle,Song[] manual,1000,5,120.50
+remove in middle,Song[] manual,1000,6,121.10
+remove in middle,Song[] manual,1000,7,116.04
+remove in middle,Song[] manual,10000,1,288.55
+remove in middle,Song[] manual,10000,2,329.56
+remove in middle,Song[] manual,10000,3,278.78
+remove in middle,Song[] manual,10000,4,332.15
+remove in middle,Song[] manual,10000,5,239.89
+remove in middle,Song[] manual,10000,6,290.12
+remove in middle,Song[] manual,10000,7,159.81
+remove in middle,Song[] manual,100000,1,4618.21
+remove in middle,Song[] manual,100000,2,4771.42
+remove in middle,Song[] manual,100000,3,4610.97
+remove in middle,Song[] manual,100000,4,5132.33
+remove in middle,Song[] manual,100000,5,4672.31
+remove in middle,Song[] manual,100000,6,4538.04
+remove in middle,Song[] manual,100000,7,4642.72
+insert middle via ListIterator,ArrayList,1000,1,117.93
+insert middle via ListIterator,ArrayList,1000,2,112.19
+insert middle via ListIterator,ArrayList,1000,3,104.36
+insert middle via ListIterator,ArrayList,1000,4,102.15
+insert middle via ListIterator,ArrayList,1000,5,101.47
+insert middle via ListIterator,ArrayList,1000,6,103.09
+insert middle via ListIterator,ArrayList,1000,7,98.97
+insert middle via ListIterator,ArrayList,10000,1,215.02
+insert middle via ListIterator,ArrayList,10000,2,212.13
+insert middle via ListIterator,ArrayList,10000,3,215.90
+insert middle via ListIterator,ArrayList,10000,4,254.09
+insert middle via ListIterator,ArrayList,10000,5,208.07
+insert middle via ListIterator,ArrayList,10000,6,215.41
+insert middle via ListIterator,ArrayList,10000,7,178.12
+insert middle via ListIterator,ArrayList,100000,1,4401.71
+insert middle via ListIterator,ArrayList,100000,2,4913.83
+insert middle via ListIterator,ArrayList,100000,3,4455.81
+insert middle via ListIterator,ArrayList,100000,4,4803.81
+insert middle via ListIterator,ArrayList,100000,5,4403.98
+insert middle via ListIterator,ArrayList,100000,6,4405.60
+insert middle via ListIterator,ArrayList,100000,7,4452.80
+insert middle via ListIterator,LinkedList,1000,1,17.67
+insert middle via ListIterator,LinkedList,1000,2,24.18
+insert middle via ListIterator,LinkedList,1000,3,18.14
+insert middle via ListIterator,LinkedList,1000,4,19.70
+insert middle via ListIterator,LinkedList,1000,5,18.90
+insert middle via ListIterator,LinkedList,1000,6,18.33
+insert middle via ListIterator,LinkedList,1000,7,19.23
+insert middle via ListIterator,LinkedList,10000,1,28.62
+insert middle via ListIterator,LinkedList,10000,2,31.26
+insert middle via ListIterator,LinkedList,10000,3,24.43
+insert middle via ListIterator,LinkedList,10000,4,29.24
+insert middle via ListIterator,LinkedList,10000,5,37.00
+insert middle via ListIterator,LinkedList,10000,6,38.85
+insert middle via ListIterator,LinkedList,10000,7,26.11
+insert middle via ListIterator,LinkedList,100000,1,134.66
+insert middle via ListIterator,LinkedList,100000,2,181.53
+insert middle via ListIterator,LinkedList,100000,3,145.57
+insert middle via ListIterator,LinkedList,100000,4,125.17
+insert middle via ListIterator,LinkedList,100000,5,143.37
+insert middle via ListIterator,LinkedList,100000,6,126.10
+insert middle via ListIterator,LinkedList,100000,7,165.53
+get k-th (random k),ArrayList,1000,1,62.80
+get k-th (random k),ArrayList,1000,2,6.59
+get k-th (random k),ArrayList,1000,3,62.18
+get k-th (random k),ArrayList,1000,4,6.25
+get k-th (random k),ArrayList,1000,5,61.26
+get k-th (random k),ArrayList,1000,6,5.58
+get k-th (random k),ArrayList,1000,7,62.63
+get k-th (random k),ArrayList,10000,1,60.95
+get k-th (random k),ArrayList,10000,2,4.64
+get k-th (random k),ArrayList,10000,3,61.98
+get k-th (random k),ArrayList,10000,4,5.95
+get k-th (random k),ArrayList,10000,5,62.31
+get k-th (random k),ArrayList,10000,6,5.05
+get k-th (random k),ArrayList,10000,7,61.56
+get k-th (random k),ArrayList,100000,1,7.00
+get k-th (random k),ArrayList,100000,2,8.05
+get k-th (random k),ArrayList,100000,3,8.03
+get k-th (random k),ArrayList,100000,4,7.76
+get k-th (random k),ArrayList,100000,5,125.88
+get k-th (random k),ArrayList,100000,6,9.43
+get k-th (random k),ArrayList,100000,7,8.94
+get k-th (random k),LinkedList,1000,1,497.39
+get k-th (random k),LinkedList,1000,2,378.75
+get k-th (random k),LinkedList,1000,3,422.48
+get k-th (random k),LinkedList,1000,4,365.05
+get k-th (random k),LinkedList,1000,5,358.95
+get k-th (random k),LinkedList,1000,6,369.67
+get k-th (random k),LinkedList,1000,7,356.01
+get k-th (random k),LinkedList,10000,1,4418.91
+get k-th (random k),LinkedList,10000,2,4496.30
+get k-th (random k),LinkedList,10000,3,4500.77
+get k-th (random k),LinkedList,10000,4,4423.35
+get k-th (random k),LinkedList,10000,5,5824.13
+get k-th (random k),LinkedList,10000,6,4466.84
+get k-th (random k),LinkedList,10000,7,4449.84
+get k-th (random k),LinkedList,100000,1,52739.78
+get k-th (random k),LinkedList,100000,2,48705.32
+get k-th (random k),LinkedList,100000,3,48203.15
+get k-th (random k),LinkedList,100000,4,60592.16
+get k-th (random k),LinkedList,100000,5,46216.22
+get k-th (random k),LinkedList,100000,6,46021.55
+get k-th (random k),LinkedList,100000,7,45671.75
+get k-th (random k),Song[] manual,1000,1,97.63
+get k-th (random k),Song[] manual,1000,2,53.79
+get k-th (random k),Song[] manual,1000,3,53.55
+get k-th (random k),Song[] manual,1000,4,54.19
+get k-th (random k),Song[] manual,1000,5,53.77
+get k-th (random k),Song[] manual,1000,6,53.93
+get k-th (random k),Song[] manual,1000,7,53.64
+get k-th (random k),Song[] manual,10000,1,54.04
+get k-th (random k),Song[] manual,10000,2,53.57
+get k-th (random k),Song[] manual,10000,3,53.71
+get k-th (random k),Song[] manual,10000,4,53.80
+get k-th (random k),Song[] manual,10000,5,54.20
+get k-th (random k),Song[] manual,10000,6,56.72
+get k-th (random k),Song[] manual,10000,7,54.38
+get k-th (random k),Song[] manual,100000,1,72.09
+get k-th (random k),Song[] manual,100000,2,71.29
+get k-th (random k),Song[] manual,100000,3,63.35
+get k-th (random k),Song[] manual,100000,4,9.05
+get k-th (random k),Song[] manual,100000,5,64.02
+get k-th (random k),Song[] manual,100000,6,3.37
+get k-th (random k),Song[] manual,100000,7,1.61
+iterate whole list,ArrayList,1000,1,1.21
+iterate whole list,ArrayList,1000,2,1.22
+iterate whole list,ArrayList,1000,3,1.20
+iterate whole list,ArrayList,1000,4,1.25
+iterate whole list,ArrayList,1000,5,1.22
+iterate whole list,ArrayList,1000,6,1.23
+iterate whole list,ArrayList,1000,7,1.23
+iterate whole list,ArrayList,10000,1,1.13
+iterate whole list,ArrayList,10000,2,1.13
+iterate whole list,ArrayList,10000,3,1.12
+iterate whole list,ArrayList,10000,4,1.12
+iterate whole list,ArrayList,10000,5,1.48
+iterate whole list,ArrayList,10000,6,1.12
+iterate whole list,ArrayList,10000,7,1.12
+iterate whole list,ArrayList,100000,1,1.11
+iterate whole list,ArrayList,100000,2,1.16
+iterate whole list,ArrayList,100000,3,1.11
+iterate whole list,ArrayList,100000,4,1.31
+iterate whole list,ArrayList,100000,5,1.11
+iterate whole list,ArrayList,100000,6,1.11
+iterate whole list,ArrayList,100000,7,1.11
+iterate whole list,LinkedList,1000,1,3.53
+iterate whole list,LinkedList,1000,2,3.03
+iterate whole list,LinkedList,1000,3,2.93
+iterate whole list,LinkedList,1000,4,3.25
+iterate whole list,LinkedList,1000,5,2.96
+iterate whole list,LinkedList,1000,6,3.02
+iterate whole list,LinkedList,1000,7,3.11
+iterate whole list,LinkedList,10000,1,2.90
+iterate whole list,LinkedList,10000,2,3.01
+iterate whole list,LinkedList,10000,3,2.83
+iterate whole list,LinkedList,10000,4,2.88
+iterate whole list,LinkedList,10000,5,3.18
+iterate whole list,LinkedList,10000,6,3.32
+iterate whole list,LinkedList,10000,7,2.84
+iterate whole list,LinkedList,100000,1,4.54
+iterate whole list,LinkedList,100000,2,4.59
+iterate whole list,LinkedList,100000,3,4.91
+iterate whole list,LinkedList,100000,4,4.46
+iterate whole list,LinkedList,100000,5,4.42
+iterate whole list,LinkedList,100000,6,4.52
+iterate whole list,LinkedList,100000,7,4.59
+iterate whole list,Song[] manual,1000,1,0.43
+iterate whole list,Song[] manual,1000,2,0.72
+iterate whole list,Song[] manual,1000,3,0.53
+iterate whole list,Song[] manual,1000,4,0.53
+iterate whole list,Song[] manual,1000,5,0.54
+iterate whole list,Song[] manual,1000,6,0.54
+iterate whole list,Song[] manual,1000,7,0.54
+iterate whole list,Song[] manual,10000,1,0.63
+iterate whole list,Song[] manual,10000,2,2.49
+iterate whole list,Song[] manual,10000,3,0.63
+iterate whole list,Song[] manual,10000,4,0.38
+iterate whole list,Song[] manual,10000,5,0.38
+iterate whole list,Song[] manual,10000,6,0.38
+iterate whole list,Song[] manual,10000,7,0.44
+iterate whole list,Song[] manual,100000,1,0.64
+iterate whole list,Song[] manual,100000,2,0.60
+iterate whole list,Song[] manual,100000,3,0.54
+iterate whole list,Song[] manual,100000,4,0.60
+iterate whole list,Song[] manual,100000,5,0.59
+iterate whole list,Song[] manual,100000,6,0.55
+iterate whole list,Song[] manual,100000,7,0.99
+iterate whole list,ArrayDeque,1000,1,1.26
+iterate whole list,ArrayDeque,1000,2,1.51
+iterate whole list,ArrayDeque,1000,3,1.57
+iterate whole list,ArrayDeque,1000,4,37.13
+iterate whole list,ArrayDeque,1000,5,1.33
+iterate whole list,ArrayDeque,1000,6,1.14
+iterate whole list,ArrayDeque,1000,7,1.17
+iterate whole list,ArrayDeque,10000,1,0.82
+iterate whole list,ArrayDeque,10000,2,1.00
+iterate whole list,ArrayDeque,10000,3,2.19
+iterate whole list,ArrayDeque,10000,4,1.21
+iterate whole list,ArrayDeque,10000,5,0.82
+iterate whole list,ArrayDeque,10000,6,0.83
+iterate whole list,ArrayDeque,10000,7,0.85
+iterate whole list,ArrayDeque,100000,1,0.83
+iterate whole list,ArrayDeque,100000,2,0.80
+iterate whole list,ArrayDeque,100000,3,0.80
+iterate whole list,ArrayDeque,100000,4,0.84
+iterate whole list,ArrayDeque,100000,5,0.94
+iterate whole list,ArrayDeque,100000,6,0.80
+iterate whole list,ArrayDeque,100000,7,0.83

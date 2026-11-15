@@ -1,0 +1,82 @@
+operation,structure,size,mean_ns_per_op,min_ns_per_op
+add at end,ArrayList,1000,6.24,5.83
+add at end,ArrayList,10000,6.22,4.84
+add at end,ArrayList,100000,4.81,4.24
+add at end,LinkedList,1000,5.41,4.80
+add at end,LinkedList,10000,7.55,7.04
+add at end,LinkedList,100000,13.55,12.37
+add at end,Song[] manual,1000,7.20,5.83
+add at end,Song[] manual,10000,43.56,11.19
+add at end,Song[] manual,100000,10.87,9.90
+add at end,ArrayDeque,1000,10.07,9.28
+add at end,ArrayDeque,10000,11.63,9.43
+add at end,ArrayDeque,100000,12.17,10.14
+insert at front,ArrayList,1000,100.97,71.73
+insert at front,ArrayList,10000,352.20,301.44
+insert at front,ArrayList,100000,8792.09,8550.00
+insert at front,LinkedList,1000,30.08,26.92
+insert at front,LinkedList,10000,43.00,24.94
+insert at front,LinkedList,100000,29.05,24.80
+insert at front,Song[] manual,1000,86.08,81.56
+insert at front,Song[] manual,10000,485.08,434.12
+insert at front,Song[] manual,100000,9916.90,9243.53
+insert at front,ArrayDeque,1000,78.80,25.43
+insert at front,ArrayDeque,10000,10.55,8.49
+insert at front,ArrayDeque,100000,5.54,5.39
+remove at front,ArrayList,1000,98.60,91.65
+remove at front,ArrayList,10000,363.74,348.65
+remove at front,ArrayList,100000,8824.48,8725.87
+remove at front,LinkedList,1000,60.29,16.52
+remove at front,LinkedList,10000,15.98,15.04
+remove at front,LinkedList,100000,13.00,9.98
+remove at front,Song[] manual,1000,38.51,29.87
+remove at front,Song[] manual,10000,320.86,267.17
+remove at front,Song[] manual,100000,9251.25,8981.29
+remove at front,ArrayDeque,1000,3.19,2.87
+remove at front,ArrayDeque,10000,10.63,2.94
+remove at front,ArrayDeque,100000,3.41,3.32
+insert in middle,ArrayList,1000,60.14,48.53
+insert in middle,ArrayList,10000,180.93,162.84
+insert in middle,ArrayList,100000,4577.31,4437.95
+insert in middle,LinkedList,1000,1292.53,1251.42
+insert in middle,LinkedList,10000,9478.42,9356.50
+insert in middle,LinkedList,100000,90765.44,87586.13
+insert in middle,Song[] manual,1000,43.47,41.51
+insert in middle,Song[] manual,10000,197.82,152.79
+insert in middle,Song[] manual,100000,4856.36,4643.36
+remove in middle,ArrayList,1000,144.22,114.58
+remove in middle,ArrayList,10000,155.06,148.21
+remove in middle,ArrayList,100000,4916.94,4399.52
+remove in middle,LinkedList,1000,461.71,450.38
+remove in middle,LinkedList,10000,9035.94,8237.28
+remove in middle,LinkedList,100000,93396.54,87021.90
+remove in middle,Song[] manual,1000,126.42,116.04
+remove in middle,Song[] manual,10000,274.12,159.81
+remove in middle,Song[] manual,100000,4712.28,4538.04
+insert middle via ListIterator,ArrayList,1000,105.74,98.97
+insert middle via ListIterator,ArrayList,10000,214.10,178.12
+insert middle via ListIterator,ArrayList,100000,4548.22,4401.71
+insert middle via ListIterator,LinkedList,1000,19.45,17.67
+insert middle via ListIterator,LinkedList,10000,30.79,24.43
+insert middle via ListIterator,LinkedList,100000,145.99,125.17
+get k-th (random k),ArrayList,1000,38.18,5.58
+get k-th (random k),ArrayList,10000,37.49,4.64
+get k-th (random k),ArrayList,100000,25.01,7.00
+get k-th (random k),LinkedList,1000,392.62,356.01
+get k-th (random k),LinkedList,10000,4654.31,4418.91
+get k-th (random k),LinkedList,100000,49735.70,45671.75
+get k-th (random k),Song[] manual,1000,60.07,53.55
+get k-th (random k),Song[] manual,10000,54.34,53.57
+get k-th (random k),Song[] manual,100000,40.68,1.61
+iterate whole list,ArrayList,1000,1.22,1.20
+iterate whole list,ArrayList,10000,1.17,1.12
+iterate whole list,ArrayList,100000,1.15,1.11
+iterate whole list,LinkedList,1000,3.12,2.93
+iterate whole list,LinkedList,10000,3.00,2.83
+iterate whole list,LinkedList,100000,4.57,4.42
+iterate whole list,Song[] manual,1000,0.55,0.43
+iterate whole list,Song[] manual,10000,0.76,0.38
+iterate whole list,Song[] manual,100000,0.65,0.54
+iterate whole list,ArrayDeque,1000,6.44,1.14
+iterate whole list,ArrayDeque,10000,1.10,0.82
+iterate whole list,ArrayDeque,100000,0.84,0.80

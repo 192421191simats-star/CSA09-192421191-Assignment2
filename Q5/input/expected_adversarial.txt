@@ -1,0 +1,2 @@
+# ranking worked out BY HAND for teams_adversarial.csv
+Overlords,Rockets,Ants,Zebras,Comets,Lions,Moles,Penalised

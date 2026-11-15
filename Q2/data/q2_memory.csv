@@ -1,0 +1,5 @@
+structure,bytes_per_element
+ArrayList,5.24
+LinkedList,24.03
+Song[] manual,5.24
+ArrayDeque,5.24

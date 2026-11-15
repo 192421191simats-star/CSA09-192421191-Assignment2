@@ -1,0 +1,201 @@
+id,title,artist,seconds
+1,Road Megham,Sid Sriram,316
+2,Raja Vaa,Taylor Swift,174
+3,Light Echo,A.R. Rahman,279
+4,Night Raja,Anirudh,261
+5,Blue Vaa,Harris Jayaraj,173
+6,Star Blue,A.R. Rahman,294
+7,Nila Heart,The Weeknd,310
+8,Echo Raja,Coldplay,299
+9,Sky Raja,Harris Jayaraj,161
+10,Star Megham,Yuvan,257
+11,Megham Star,Anirudh,296
+12,Dream Star,The Weeknd,196
+13,Nila Echo,Coldplay,313
+14,Night Light,Anirudh,290
+15,Vaa Echo,A.R. Rahman,308
+16,Night Mazhai,The Weeknd,286
+17,Blue Road,Arijit Singh,299
+18,Paadal Light,Yuvan,213
+19,Rain Heart,Anirudh,297
+20,Dream Kanave,Arijit Singh,237
+21,Paadal Dream,Coldplay,168
+22,Nila Kanave,Sid Sriram,192
+23,Road Megham,Arijit Singh,257
+24,Raja Vaa,Taylor Swift,296
+25,Road River,Adele,239
+26,River Mazhai,Coldplay,266
+27,Vaa River,Yuvan,271
+28,Vaa Raja,Adele,329
+29,Dream Echo,The Weeknd,264
+30,Dream Sky,The Weeknd,238
+31,Kadhal Paadal,Shreya Ghoshal,193
+32,River Nila,Arijit Singh,165
+33,Night Dream,Ilaiyaraaja,213
+34,Sky River,Arijit Singh,170
+35,Rain Paadal,Sid Sriram,290
+36,Fire Megham,Sid Sriram,290
+37,Fire Blue,Shreya Ghoshal,324
+38,Sky Heart,Ilaiyaraaja,171
+39,Rain Megham,Harris Jayaraj,318
+40,Heart Kadhal,Arijit Singh,300
+41,Rain Fire,Yuvan,151
+42,Megham Blue,Taylor Swift,244
+43,River Echo,Shreya Ghoshal,182
+44,Kanave Raja,Arijit Singh,324
+45,Star Sky,Sid Sriram,252
+46,Sky Nila,Arijit Singh,312
+47,Sky Raja,Harris Jayaraj,167
+48,Night Paadal,Ilaiyaraaja,178
+49,Road Raja,Anirudh,150
+50,Echo Megham,Taylor Swift,175
+51,Light Kadhal,Anirudh,203
+52,River Sky,Ilaiyaraaja,312
+53,Fire Light,Coldplay,243
+54,Mazhai Nila,Anirudh,274
+55,Paadal Mazhai,Arijit Singh,229
+56,Vaa Megham,Anirudh,237
+57,Fire Mazhai,Adele,191
+58,Kanave Kadhal,Harris Jayaraj,285
+59,Light Megham,Adele,289
+60,Kadhal Kanave,Yuvan,314
+61,Vaa Fire,Taylor Swift,243
+62,Rain Light,Harris Jayaraj,286
+63,Star Kanave,Shreya Ghoshal,312
+64,Heart Night,Harris Jayaraj,252
+65,Heart Night,Taylor Swift,276
+66,Light Kadhal,A.R. Rahman,221
+67,Mazhai Fire,Harris Jayaraj,327
+68,River Light,Arijit Singh,239
+69,Light Vaa,Harris Jayaraj,176
+70,Heart Mazhai,Harris Jayaraj,236
+71,Night Mazhai,Coldplay,306
+72,Kadhal Mazhai,The Weeknd,238
+73,Vaa Nila,Sid Sriram,201
+74,Mazhai Rain,Sid Sriram,312
+75,Road Vaa,Adele,251
+76,Paadal Sky,Adele,171
+77,Rain River,Ilaiyaraaja,157
+78,Megham Echo,Arijit Singh,317
+79,Megham Mazhai,The Weeknd,239
+80,Megham Star,Taylor Swift,183
+81,Kadhal River,Adele,316
+82,Nila Kanave,Adele,185
+83,Blue Night,Harris Jayaraj,157
+84,Fire Night,Yuvan,278
+85,Heart Echo,Shreya Ghoshal,216
+86,Star Blue,Ilaiyaraaja,165
+87,Light Paadal,The Weeknd,299
+88,Kanave Blue,Taylor Swift,183
+89,Star Megham,Taylor Swift,280
+90,Kadhal Paadal,Ilaiyaraaja,305
+91,Kadhal Megham,Ilaiyaraaja,186
+92,Mazhai Nila,Taylor Swift,165
+93,Road Kanave,Taylor Swift,292
+94,Mazhai Nila,Taylor Swift,164
+95,Heart Night,Yuvan,160
+96,Nila Kanave,Arijit Singh,293
+97,Kadhal Vaa,Arijit Singh,233
+98,River Kanave,Coldplay,281
+99,Night Fire,Arijit Singh,280
+100,Star Mazhai,Taylor Swift,213
+101,Kanave Fire,Taylor Swift,201
+102,Paadal Megham,Sid Sriram,181
+103,Sky Paadal,Shreya Ghoshal,168
+104,Heart Blue,Anirudh,204
+105,Dream Nila,Ilaiyaraaja,314
+106,Light Megham,Yuvan,185
+107,Paadal Heart,Adele,174
+108,Sky Mazhai,Ilaiyaraaja,320
+109,Heart Rain,Adele,260
+110,Kanave Sky,Shreya Ghoshal,257
+111,Night Light,Shreya Ghoshal,173
+112,Light Kadhal,Shreya Ghoshal,291
+113,Paadal River,Adele,154
+114,Sky Road,Taylor Swift,309
+115,Dream Kanave,Anirudh,178
+116,Heart Nila,Anirudh,217
+117,Fire Raja,Ilaiyaraaja,219
+118,Megham Blue,The Weeknd,216
+119,Sky Megham,Taylor Swift,281
+120,Echo Mazhai,Adele,233
+121,Vaa Fire,A.R. Rahman,326
+122,Rain Blue,Anirudh,218
+123,Kadhal Vaa,Yuvan,171
+124,River Heart,Anirudh,217
+125,Nila Paadal,A.R. Rahman,236
+126,Star Blue,Yuvan,309
+127,Megham Raja,Taylor Swift,211
+128,Nila Rain,Yuvan,162
+129,Rain Night,Yuvan,310
+130,Dream Kanave,Harris Jayaraj,224
+131,Paadal Kanave,The Weeknd,195
+132,Fire Light,A.R. Rahman,214
+133,Raja Kadhal,A.R. Rahman,279
+134,Star Night,Taylor Swift,271
+135,Heart Paadal,Anirudh,318
+136,Blue Mazhai,Taylor Swift,250
+137,Kanave Dream,Adele,205
+138,Heart Road,Harris Jayaraj,330
+139,Megham Sky,Shreya Ghoshal,163
+140,Megham Kadhal,Anirudh,310
+141,Fire Blue,Ilaiyaraaja,164
+142,Vaa Sky,Taylor Swift,321
+143,Dream Heart,Adele,225
+144,Raja Paadal,Ilaiyaraaja,190
+145,Fire Paadal,A.R. Rahman,217
+146,Light Road,Taylor Swift,232
+147,Heart Raja,Yuvan,205
+148,Light Rain,A.R. Rahman,235
+149,Sky Vaa,Arijit Singh,221
+150,Kanave Night,Harris Jayaraj,279
+151,Kadhal Vaa,Yuvan,172
+152,Megham Sky,Coldplay,160
+153,Sky Kadhal,Yuvan,227
+154,Heart Vaa,Coldplay,285
+155,Megham Sky,Shreya Ghoshal,276
+156,Megham Dream,Adele,308
+157,Megham Raja,Adele,281
+158,Blue Kanave,Ilaiyaraaja,284
+159,Kanave Echo,A.R. Rahman,325
+160,Echo Heart,Anirudh,157
+161,Raja Megham,The Weeknd,242
+162,Nila Sky,Arijit Singh,292
+163,Raja Kadhal,The Weeknd,286
+164,Heart Mazhai,Yuvan,150
+165,Paadal Vaa,Adele,278
+166,Star Vaa,The Weeknd,284
+167,Vaa Mazhai,Yuvan,169
+168,Fire Heart,Adele,202
+169,Heart Paadal,Arijit Singh,247
+170,Vaa Mazhai,The Weeknd,223
+171,Raja Night,Anirudh,303
+172,Megham Road,Yuvan,316
+173,Dream Echo,Ilaiyaraaja,153
+174,Mazhai Raja,Arijit Singh,218
+175,Nila Night,The Weeknd,275
+176,Dream Kanave,Yuvan,268
+177,Paadal River,Anirudh,290
+178,Night Dream,Anirudh,271
+179,Kadhal Dream,Arijit Singh,169
+180,Kanave Paadal,Yuvan,249
+181,Night River,Anirudh,298
+182,Vaa Megham,Adele,284
+183,Fire Light,Ilaiyaraaja,304
+184,Kanave Fire,Anirudh,330
+185,Light Heart,Arijit Singh,274
+186,Sky Kadhal,Ilaiyaraaja,150
+187,Mazhai Paadal,Sid Sriram,227
+188,Megham Blue,Shreya Ghoshal,246
+189,Road Nila,Shreya Ghoshal,150
+190,Road River,Sid Sriram,180
+191,Night Kadhal,Adele,224
+192,Fire Light,Anirudh,250
+193,Sky Echo,Anirudh,242
+194,Blue Fire,A.R. Rahman,221
+195,Nila Raja,The Weeknd,223
+196,Megham Heart,Yuvan,261
+197,Kanave Road,Harris Jayaraj,245
+198,Blue Kadhal,The Weeknd,252
+199,Star River,Harris Jayaraj,170
+200,Raja Blue,Arijit Singh,307

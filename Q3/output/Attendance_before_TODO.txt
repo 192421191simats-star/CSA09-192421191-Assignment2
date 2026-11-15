@@ -1,0 +1,4 @@
+$ cd Q3
+$ javac -d out_before before_todo/Attendance.java
+$ java -cp out_before Attendance
+Unique students: 3
